@@ -1,0 +1,38 @@
+# Compiled executables
+euclidean/euclidean
+fermatFactorization/fermat
+quotient_rem/quotient_remainder
+unique_factorization/uft
+
+# Temporary files
+**/tempCodeRunnerFile*
+**/*.tmp
+**/*.temp
+
+# Object files
+*.o
+*.obj
+
+# Debug files
+*.dSYM/
+*.pdb
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backup files
+*.bak
+*.backup
