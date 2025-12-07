@@ -1,24 +1,30 @@
-# Compiled Object Files
-*.o
-
-# Executables
+# Compiled binaries
 rsa_system
+*.o
+*.exe
+*.out
 
-# Temp Files from Code Runner
-tempCodeRunnerFile
-tempCodeRunnerFile.*
+# Executables in subdirectories
+euclidean/euclidean
+euclidean/euclidean_gui
+fermatFactorization/fermat
+mod_exponentiation/mod_exp
+quotrem/quotient_remainder
+sieve/sieve
+uft/uft
 
-# Standalone test executables (kept in folders for testing)
-# Uncomment these if you don't want to commit them:
-# euclidean/euclidean
-# sieve/sieve
-# uft/uft
-# fermatFactorization/fermat
-# mod_exponentiation/mod_exp
-# quotrem/quotient_remainder
+# Keys file (contains sensitive data)
+keys.json
 
-# macOS
-.DS_Store
-
-# VSCode
+# Editor files
 .vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+
