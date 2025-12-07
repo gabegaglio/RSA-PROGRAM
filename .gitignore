@@ -1,38 +1,24 @@
-# Compiled executables
-euclidean/euclidean
-fermatFactorization/fermat
-quotient_rem/quotient_remainder
-unique_factorization/uft
-
-# Temporary files
-**/tempCodeRunnerFile*
-**/*.tmp
-**/*.temp
-
-# Object files
+# Compiled Object Files
 *.o
-*.obj
 
-# Debug files
-*.dSYM/
-*.pdb
+# Executables
+rsa_system
 
-# IDE files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
+# Temp Files from Code Runner
+tempCodeRunnerFile
+tempCodeRunnerFile.*
 
-# OS generated files
+# Standalone test executables (kept in folders for testing)
+# Uncomment these if you don't want to commit them:
+# euclidean/euclidean
+# sieve/sieve
+# uft/uft
+# fermatFactorization/fermat
+# mod_exponentiation/mod_exp
+# quotrem/quotient_remainder
+
+# macOS
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
 
-# Backup files
-*.bak
-*.backup
+# VSCode
+.vscode/

@@ -2,6 +2,7 @@
 #include<vector>
 #include<iomanip>
 #include<climits>
+#include "euclidean.h"
 
 using namespace std;
 
@@ -13,6 +14,34 @@ long long euclidean(long long a, long long b){                           // was 
         A = B;
         B = R;
     }
+}
+
+long long modularInv(long long a, long long b){
+    // Extended Euclidean Algorithm: find x such that a*x ≡ 1 (mod b)
+    long long old_r = b, r = a;
+    long long old_s = 0, s = 1;
+    
+    while (r != 0) {
+        long long quotient = old_r / r;
+        
+        long long temp = r;
+        r = old_r - quotient * r;
+        old_r = temp;
+        
+        temp = s;
+        s = old_s - quotient * s;
+        old_s = temp;
+    }
+    
+    if (old_r > 1) {
+        return -1; // No inverse exists (gcd != 1)
+    }
+    
+    if (old_s < 0) {
+        old_s += b;
+    }
+    
+    return old_s;
 }
 
 vector<vector<long long>> extendedEuclidean(long long a, long long b){
@@ -27,10 +56,10 @@ vector<vector<long long>> extendedEuclidean(long long a, long long b){
 
     while (R != 0){
         R = A % B;
-        cout<<"remainder "<<R<<endl;
+        cout<<"Remainder: "<<R<<endl;
         
         long long quotient = A / B;
-        cout<<"quotient "<<quotient<<endl;
+        cout<<"Quotient: "<<quotient<<endl;
 
         if (R == 0) {
             // push final row
@@ -127,6 +156,7 @@ void runExtendedEuclidean() {
     cout << "Verification: " << extended[k][2] << " * " << a << " + " << extended[k][3] << " * " << b << " = " << (extended[k][2] * a + extended[k][3] * b) << endl;
 }
 
+#ifndef UNIFIED_BUILD
 int main(){
     int choice;
     
@@ -158,3 +188,4 @@ int main(){
     
     return 0;
 }
+#endif

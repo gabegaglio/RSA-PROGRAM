@@ -1,0 +1,30 @@
+# Compiled binaries
+rsa_system
+*.o
+*.exe
+*.out
+
+# Executables in subdirectories
+euclidean/euclidean
+euclidean/euclidean_gui
+fermatFactorization/fermat
+mod_exponentiation/mod_exp
+quotrem/quotient_remainder
+sieve/sieve
+uft/uft
+
+# Keys file (contains sensitive data)
+keys.json
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+

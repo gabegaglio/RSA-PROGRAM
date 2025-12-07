@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "../../../webProjects/web_practice"
+	},
+	{
+		"path": ".."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "bishoy"
+  }
+}
